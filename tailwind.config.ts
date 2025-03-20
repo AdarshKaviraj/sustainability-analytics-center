@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				metric: {
+					positive: '#4caf50',
+					negative: '#f44336',
+					neutral: '#9e9e9e'
+				},
+				sustainability: {
+					high: '#4caf50',
+					medium: '#ff9800',
+					low: '#f44336'
+				},
+				navbar: {
+					DEFAULT: '#1a1a1a',
+					foreground: '#ffffff'
+				},
+				chart: {
+					primary: 'rgba(144, 202, 196, 0.6)',
+					line: 'rgba(144, 202, 196, 1)',
+					grid: '#e0e0e0'
 				}
 			},
 			borderRadius: {
@@ -84,11 +104,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'slide-in': {
+					'0%': { transform: 'translateX(-10px)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'slide-in': 'slide-in 0.3s ease-out'
 			}
 		}
 	},
